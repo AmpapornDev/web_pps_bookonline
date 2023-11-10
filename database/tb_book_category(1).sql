@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 25, 2023 at 12:19 PM
+-- Generation Time: Nov 10, 2023 at 07:13 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -41,7 +41,10 @@ CREATE TABLE `tb_book_category` (
 
 INSERT INTO `tb_book_category` (`id_book_cate`, `name_book_cate`, `id_user`, `add_date`, `edit_date`) VALUES
 (5, 'นวนิยาย', 0, '2023-10-25 09:41:08', '2023-10-25 10:46:29'),
-(4, 'สารคดี', 0, '2023-10-25 09:40:34', '2023-10-25 09:40:34');
+(4, 'สารคดี', 0, '2023-10-25 09:40:34', '2023-10-25 09:40:34'),
+(7, 'นิทาน 2 ภาษา', 0, '2023-11-02 11:26:30', '2023-11-02 11:26:30'),
+(8, 'วรรณกรรมเยาวชน', 0, '2023-11-02 11:28:44', '2023-11-02 11:28:44'),
+(9, 'How to', 0, '2023-11-02 11:37:50', '2023-11-02 11:37:50');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +64,7 @@ ALTER TABLE `tb_book_category`
 -- AUTO_INCREMENT for table `tb_book_category`
 --
 ALTER TABLE `tb_book_category`
-  MODIFY `id_book_cate` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_book_cate` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
