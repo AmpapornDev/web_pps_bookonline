@@ -57,7 +57,7 @@ CREATE TABLE `tb_cart_order` (<br/>
 ----> function.php : ไว้สำหรับเก็บฟังก์ชั่นต่างๆที่ใช้ในเว็บไซต์<br/><br/>
 
 <b>- view : เก็บไฟล์ Html หน้าเว็บไซต์</b><br/>
-----> admin_login **(Admin 1 Person)** : หน้า Login / หน้า Edit profile admin<br/>
+----> admin_login ****(Admin 1 Person)**** : หน้า Login / หน้า Edit profile admin<br/>
 ----> home : list / add / edit / delete รายการหนังสือ<br/>
 ----> category : list / add / edit / delete หมวดหนังสือ<br/>
 ----> header.php : header in website<br/>
