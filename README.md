@@ -50,7 +50,7 @@ CREATE TABLE `tb_cart_order` (<br/>
   `update_cart_order` datetime NOT NULL<br/>
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;<br/>
 
-###### Folder Structure ######<br/><br/>
+<b>###### Folder Structure ######</b><br/><br/>
 <b>- lib : เก็บไฟล์ที่ใช้ในการ include to website</b><br/>
 ----> check_login.php : ไว้สำหรับเช็คว่า Admin ได้ login มั้ยถ้าไม่จะบังคับให้ login<br/>
 ----> conect_database.php : connect database<br/>
