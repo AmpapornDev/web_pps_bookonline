@@ -28,7 +28,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="../order/index.php">
               <span data-feather="file"></span>
               Orders
             </a>

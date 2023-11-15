@@ -79,4 +79,18 @@ function ListCateBook($value)
     return $rec;
 }
 
+function ListBank($value){
+    include('conect_database.php');
+    if ($value == '0') {
+        $rec = '';
+    } else {
+        $sql = "select name_bank from tb_acc_bank where id_acc_bank = '" . $value . "' ";
+        $query = $mysqli->query($sql);
+        $data = $query->fetch_assoc();
+        $rec = $data['name_bank'];
+    }
+    return $rec;
+}
+
+
 
