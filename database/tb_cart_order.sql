@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 10, 2023 at 04:22 AM
+-- Generation Time: Nov 15, 2023 at 06:20 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -35,6 +35,7 @@ CREATE TABLE `tb_cart_order` (
   `name_book` varchar(350) NOT NULL,
   `price_book` decimal(10,0) NOT NULL,
   `qty_book` int(3) NOT NULL,
+  `status_cart_order` varchar(10) NOT NULL,
   `add_cart_order` datetime NOT NULL,
   `update_cart_order` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -43,10 +44,10 @@ CREATE TABLE `tb_cart_order` (
 -- Dumping data for table `tb_cart_order`
 --
 
-INSERT INTO `tb_cart_order` (`id_cart_order`, `id_payment`, `id_member`, `id_book`, `name_book`, `price_book`, `qty_book`, `add_cart_order`, `update_cart_order`) VALUES
-(74, 0, 1, 19, 'บ้านเล็กริมห้วย (ชุดบ้านเล็ก เล่ม 4)', 198, 1, '2023-11-09 10:47:07', '2023-11-09 10:47:07'),
-(75, 0, 1, 29, 'กาลครั้งหนึ่ง ณ กาลาปากอส', 145, 2, '2023-11-09 10:57:04', '2023-11-09 10:57:04'),
-(77, 0, 1, 14, 'Miracles เพราะเธอคือ...ปาฏิหาริย์', 59, 1, '2023-11-09 11:22:17', '2023-11-09 11:22:17');
+INSERT INTO `tb_cart_order` (`id_cart_order`, `id_payment`, `id_member`, `id_book`, `name_book`, `price_book`, `qty_book`, `status_cart_order`, `add_cart_order`, `update_cart_order`) VALUES
+(86, 20, 1, 29, 'กาลครั้งหนึ่ง ณ กาลาปากอส', 145, 1, 'success', '2023-11-14 08:56:39', '2023-11-14 08:56:39'),
+(88, 21, 1, 50, 'คุณแม่ของฉันเจ๋งที่สุด', 130, 1, 'success', '2023-11-14 11:48:55', '2023-11-14 11:48:55'),
+(89, 21, 1, 30, 'ต้นส้มแสนรัก ภาค2', 169, 1, 'success', '2023-11-14 12:36:15', '2023-11-14 12:36:15');
 
 --
 -- Indexes for dumped tables
@@ -66,7 +67,7 @@ ALTER TABLE `tb_cart_order`
 -- AUTO_INCREMENT for table `tb_cart_order`
 --
 ALTER TABLE `tb_cart_order`
-  MODIFY `id_cart_order` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id_cart_order` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
